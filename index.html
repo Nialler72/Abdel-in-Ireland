@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdel in Ireland</title>
+  <style>
+    :root{
+      --green:#0f5f3b;
+      --deep:#11332a;
+      --cream:#f7f3ea;
+      --gold:#d8b15e;
+      --ink:#17211d;
+      --muted:#65746e;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial, Helvetica, sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+    a{color:inherit}
+    nav{position:sticky;top:0;z-index:20;background:rgba(17,51,42,.95);color:white;backdrop-filter:blur(8px);box-shadow:0 2px 18px rgba(0,0,0,.15)}
+    nav .wrap{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:18px}
+    nav .brand{font-weight:800;letter-spacing:.4px}
+    nav .links{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+    nav a{text-decoration:none;opacity:.92}
+    nav a:hover{opacity:1;text-decoration:underline}
+    .hero{min-height:92vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;background:var(--deep);color:white}
+    .hero-img{background:url('assets/photos/abdel-workshop-main.jpg') center center/cover no-repeat;min-height:520px}
+    .hero-text{display:flex;align-items:center;padding:56px 8vw;background:linear-gradient(135deg,#103528,#0f5f3b)}
+    .eyebrow{color:#ffe2a1;font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;margin-bottom:14px}
+    h1{font-size:clamp(3rem,7vw,6.5rem);line-height:.9;margin:0 0 22px;letter-spacing:-.06em}
+    .hero p{font-size:1.25rem;max-width:650px;margin:0 0 24px;color:#f4f7f3}
+    .pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+    .pill{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 12px;font-size:.9rem;background:rgba(255,255,255,.08)}
+    .button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;background:var(--gold);color:#13291f}
+    .btn.secondary{background:transparent;color:white;border:1px solid rgba(255,255,255,.45)}
+    section{padding:72px 20px}
+    .container{max-width:1120px;margin:auto}
+    .section-title{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.04em;color:var(--deep)}
+    .lead{font-size:1.18rem;color:#34433d;max-width:850px;margin:0 0 28px}
+    .grid{display:grid;gap:22px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--card);border-radius:18px;padding:26px;box-shadow:0 8px 28px rgba(31,48,39,.08);border:1px solid rgba(0,0,0,.05)}
+    .card h3{margin:0 0 10px;color:var(--green);font-size:1.35rem}
+    .stat{font-size:2.35rem;font-weight:800;color:var(--green);line-height:1}.stat-label{color:var(--muted);font-weight:700;margin-top:5px}
+    .quote{font-size:1.08rem;border-left:5px solid var(--gold);padding-left:18px;margin:18px 0;color:#24352e}.quote cite{display:block;font-style:normal;font-weight:700;color:var(--green);margin-top:10px}
+    .timeline{position:relative;margin-top:20px}.timeline:before{content:"";position:absolute;left:22px;top:0;bottom:0;width:3px;background:#d9e0d9}.t-item{position:relative;padding-left:62px;margin-bottom:24px}.t-item:before{content:"";position:absolute;left:12px;top:2px;width:22px;height:22px;border-radius:50%;background:var(--green);border:4px solid var(--cream)}.t-year{font-weight:800;color:var(--green);font-size:1.15rem}
+    .photo{width:100%;height:260px;object-fit:cover;border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+    .photo.tall{height:520px}.caption{font-size:.92rem;color:var(--muted);margin-top:8px}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+    .dark{background:var(--deep);color:white}.dark .section-title{color:white}.dark .lead{color:#dfe9e4}.dark .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:white}.dark .quote{color:#fff}.dark .quote cite,.dark .card h3{color:#ffe2a1}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.gallery img{width:100%;height:360px;object-fit:cover;border-radius:16px}
+    video{width:100%;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.18);background:#000}
+    .letter-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.letter{background:white;border-radius:16px;padding:20px;border:1px solid rgba(0,0,0,.07);box-shadow:0 6px 18px rgba(0,0,0,.06)}.letter h3{margin:0 0 8px;color:var(--green)}.letter a{font-weight:800;color:var(--green)}
+    footer{background:#0b221b;color:white;padding:36px 20px;text-align:center}.small{font-size:.92rem;color:#65746e}.dark .small{color:#c9d4cf}
+    @media(max-width:850px){.hero{grid-template-columns:1fr}.hero-img{min-height:480px}.grid-3,.grid-2,.split,.letter-list,.gallery{grid-template-columns:1fr}nav .wrap{align-items:flex-start;flex-direction:column}.photo.tall{height:380px}.gallery img{height:250px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div class="brand">Abdel in Ireland</div>
+      <div class="links">
+        <a href="#story">Story</a><a href="#workshop">Workshop</a><a href="#ducks">Ducks</a><a href="#football">Football</a><a href="#voices">References</a><a href="#gallery">Photos</a><a href="#video">Video</a><a href="#letters">Letters</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-img" role="img" aria-label="Abdel in his workshop"></div>
+    <div class="hero-text">
+      <div>
+        <div class="eyebrow">County Laois • Since 23 January 2020</div>
+        <h1>Abdel in Ireland</h1>
+        <p>A story of work, friendship and community built over more than six years in Ireland.</p>
+        <div class="pill-row"><span class="pill">6+ years in Ireland</span><span class="pill">Stradbally community</span><span class="pill">Workshop & practical skills</span><span class="pill">GAA Dads & Lads</span></div>
+        <div class="button-row"><a class="btn" href="#letters">View reference letters</a><a class="btn secondary" href="#football">See community photos</a></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="story">
+    <div class="container">
+      <h2 class="section-title">A life built here</h2>
+      <p class="lead">Abdelmohcene Belferat arrived in Ireland on 23 January 2020. Since then, he has developed friendships, built local connections, worked hard to establish himself and become an active part of community life in County Laois.</p>
+      <div class="grid grid-3">
+        <div class="card"><div class="stat">2020</div><div class="stat-label">Arrived in Ireland</div></div>
+        <div class="card"><div class="stat">6+</div><div class="stat-label">Years building community ties</div></div>
+        <div class="card"><div class="stat">15</div><div class="stat-label">Reference pages from supporters</div></div>
+      </div>
+      <div class="timeline">
+        <div class="t-item"><div class="t-year">23 January 2020</div><div>Abdel arrived in Ireland and began building a new life.</div></div>
+        <div class="t-item"><div class="t-year">2023–2024</div><div>References from accommodation staff, employers and local community members described him as respectful, helpful, reliable and well-liked.</div></div>
+        <div class="t-item"><div class="t-year">2024–2025</div><div>Abdel established deeper links in Stradbally through his workshop, practical skills and friendships with local people.</div></div>
+        <div class="t-item"><div class="t-year">2025</div><div>He joined Stradbally Dads & Lads Gaelic Football, becoming part of a team and a wider sporting community.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workshop" class="dark">
+    <div class="container split">
+      <div><img class="photo tall" src="assets/photos/abdel-workshop-main.jpg" alt="Abdel in his workshop"></div>
+      <div>
+        <h2 class="section-title">The workshop</h2>
+        <p class="lead">For many people in Stradbally, Abdel is known through his workshop — a place associated with cars, panel beating, practical problem-solving and local connection.</p>
+        <div class="quote">"His shed has become something of a local hub — friends frequently stop by, and increasingly, Irish locals do too."<cite>Niall Creery, Chairman, Stradbally GAA Football Committee</cite></div>
+        <div class="quote">"He's become a part of the local scene... you'd often see people stopping by to visit or just to catch up with him."<cite>Pat Deegan, shed owner</cite></div>
+        <p>Those who know Abdel describe him as hardworking, generous with his time and willing to share tools, knowledge and advice. His workshop represents more than employment or enterprise; it represents belonging, routine and trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ducks">
+    <div class="container split">
+      <div>
+        <h2 class="section-title">The ducks by the river</h2>
+        <p class="lead">Several supporters speak about Abdel's work ethic. Others speak about his kindness. One simple story captures this well: when ducks began visiting the river beside his workshop, Abdel began feeding them. They returned each day and were later joined by ducklings. He continued to look after them, buying food especially for them.</p>
+        <div class="quote">"When a pair of ducks showed up one day, he began feeding them. They now return every day, joined recently by a group of ducklings, and Abdel buys food especially for them."<cite>Niall Creery reference</cite></div>
+      </div>
+      <div>
+        <video controls preload="metadata"><source src="assets/video/ducks-by-river.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        <div class="caption">Abdel feeding the ducks by the river beside his workshop.</div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:28px">
+      <div class="grid grid-3">
+        <div class="card"><h3>Hardworking</h3><p>References repeatedly describe Abdel as reliable, committed and willing to work long hours to build a future.</p></div>
+        <div class="card"><h3>Helpful</h3><p>Supporters describe him assisting friends, neighbours, local residents and people who call to his workshop.</p></div>
+        <div class="card"><h3>Kind</h3><p>His generosity and quiet acts of care are recurring themes across the letters of support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="football" class="dark">
+    <div class="container">
+      <h2 class="section-title">Football, friendship and community</h2>
+      <p class="lead">One of the clearest examples of Abdel's integration into Irish life is his involvement with the Stradbally Dads & Lads Gaelic Football group.</p>
+      <div class="grid grid-2">
+        <div class="card"><h3>Stradbally Dads & Lads</h3><p>David Walsh, coordinator of the group, described Abdel as attending every training session after joining, becoming a very effective corner forward, being keen to learn about the sport and its history, and integrating extremely well into the group and the local community.</p></div>
+        <div class="card"><h3>A teammate, not a visitor</h3><p>Niall Creery described Abdel as bringing a jovial spirit and a great sense of humour, someone who enjoys the craic and fits right in. The photographs below show him standing naturally alongside teammates and families as part of the group.</p></div>
+      </div>
+      <div class="quote">"He has integrated extremely well into the group and the local community and he would be a big loss to us all if he cannot stay with us."<cite>David Walsh, Stradbally Dads & Lads coordinator</cite></div>
+      <div class="quote">"Polite, mannerly, sociable and getting along well with everyone."<cite>Austin Clancy, Peace Commissioner</cite></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Community photos</h2>
+      <p class="lead">These photos show Abdel involved with Stradbally Dads & Lads, representing the team and participating with local players, families and friends.</p>
+      <div class="gallery">
+        <div><img src="assets/photos/football-team-1.jpeg" alt="Stradbally Dads and Lads team photo"><div class="caption">Stradbally Dads & Lads team photo.</div></div>
+        <div><img src="assets/photos/football-abbotstown-1.jpeg" alt="Stradbally Dads and Lads at Abbotstown"><div class="caption">Abdel with teammates at Abbotstown.</div></div>
+        <div><img src="assets/photos/football-abbotstown-2.jpeg" alt="Team in navy jerseys"><div class="caption">Representing the group in match kit.</div></div>
+        <div><img src="assets/photos/football-team-2.jpeg" alt="Large community football group"><div class="caption">Community sport with players, families and supporters.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="dark">
+    <div class="container split">
+      <div>
+        <h2 class="section-title">More than a teammate</h2>
+        <p class="lead">Letters can describe a person's character. Photos and video can show it. This clip captures the good humour, warmth and camaraderie that developed through Abdel's involvement with the team.</p>
+        <p class="small">Video supplied by supporters for inclusion in this community profile.</p>
+      </div>
+      <div><video controls preload="metadata"><source src="assets/video/abdel-football.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+    </div>
+  </section>
+
+  <section id="voices">
+    <div class="container">
+      <h2 class="section-title">Voices of support</h2>
+      <p class="lead">The support for Abdel comes from people who know him in different ways: work, accommodation, community, football, religion and public life. Across the letters, the same themes appear again and again.</p>
+      <div class="grid grid-3">
+        <div class="card"><h3>Niall Creery</h3><p>Describes Abdel's pride, dedication, generosity, workshop reputation, football involvement and wish to settle in Laois.</p></div>
+        <div class="card"><h3>Pat Deegan</h3><p>Describes Abdel paying rent on time, keeping the place clean, working hard and becoming part of the local scene.</p></div>
+        <div class="card"><h3>David Walsh</h3><p>Describes Abdel as a valued Dads & Lads member who attends training, learns the game and would be a loss to the group.</p></div>
+        <div class="card"><h3>Kirby Engineering</h3><p>Describes him as consistently demonstrating great work ethic, reliability and professionalism.</p></div>
+        <div class="card"><h3>Accommodation staff</h3><p>References from Montague/Emo describe him as respectful, courteous, cooperative, well-spoken and popular among peers.</p></div>
+        <div class="card"><h3>Community leaders</h3><p>Letters from public representatives and religious/community figures describe his integration, character and contribution.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="letters" class="dark">
+    <div class="container">
+      <h2 class="section-title">Reference library</h2>
+      <p class="lead">The full reference documents can be opened below. These should also be submitted through the solicitor as part of the formal Section 3(11) materials.</p>
+      <div class="letter-list">
+        <div class="letter"><h3>Combined references</h3><p>All reference letters gathered together, including community, employment, sporting and personal support.</p><a href="assets/letters/reference-letters-combined.pdf" target="_blank">Open PDF</a></div>
+        <div class="letter"><h3>Niall Creery reference</h3><p>Detailed reference focusing on Abdel's workshop, character, community involvement and Stradbally GAA link.</p><a href="assets/letters/niall-creery-reference.pdf" target="_blank">Open PDF</a></div>
+        <div class="letter"><h3>Letter to Minister</h3><p>Letter highlighting Abdel's case and the support gathered from County Laois.</p><a href="assets/letters/letter-to-minister-justice.pdf" target="_blank">Open PDF</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why this matters</h2>
+      <p class="lead">This website is intended to present a fuller picture of Abdel's life in Ireland: the people who know him, the friendships he has built, the contribution he has made, and the community that has come to regard him as one of their own.</p>
+      <div class="card"><p><strong>Note:</strong> This website is a community profile and evidence companion. It does not replace legal submissions, solicitor advice or the formal Section 3(11) application. All factual details should be checked carefully before the site is published or shared.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Abdel in Ireland</strong><br>
+    A community profile prepared to accompany supporting materials for Abdelmohcene Belferat.
+  </footer>
+</body>
+</html>
